@@ -20,11 +20,11 @@ public class CurrencySection extends BasePage {
 
     @FindBy(id = "currency")
     @CacheLookup
-    private WebElement currency;
+    private WebElement currencySection;
 
-    @FindBy(className = "box-header")
+    @FindBy(xpath = "//div[@id='headingExpenses']")
     @CacheLookup
-    private WebElement expenses;
+    private WebElement expensesSection;
 
 
     public void clickAcceptAllbutton() {
@@ -33,10 +33,11 @@ public class CurrencySection extends BasePage {
 
     public void selectCurrencyType(String currencyType) {
 
-        selectElement(currency, currencyType);
+        selectElement(currencySection, currencyType);
     }
 
     public void openExpensesOptions() {
-        clickFunction(expenses);
+        waitFor(2);
+        clickFunction(expensesSection);
     }
 }
