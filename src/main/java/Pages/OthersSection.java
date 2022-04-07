@@ -7,8 +7,9 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.BrowserUtils;
+import utilities.Log4j;
 
-public class OthersSection extends BasePage{
+public class OthersSection extends BasePage {
 
     public OthersSection(WebDriver driver) {
         super(driver);
@@ -33,20 +34,29 @@ public class OthersSection extends BasePage{
 
 
     public void typeTaxationCost(String value) {
-        sendKeysFunction(taxationCost,value);
+        Log4j.info("Typing taxationCost input field");
+        sendKeysFunction(taxationCost, value);
     }
+
     public void typeProfitMargin(String value) {
-        sendKeysFunction(yourProfitMargin,value);
+        Log4j.info("Typing yourProfitMargin input field");
+        sendKeysFunction(yourProfitMargin, value);
     }
+
     public void typeHoursForWorking(String value) {
-        sendKeysFunction(hoursForWorking,value);
+        Log4j.info("Typing hoursForWorking input field");
+        sendKeysFunction(hoursForWorking, value);
     }
-    public void viewResult(){
+
+    public void viewResult() {
+        Log4j.info("Printing Result");
         getText(resultText);
     }
+
     public void screenshot() {
         waitFor(1);
+        Log4j.info("Creating Screenshot");
         BrowserUtils.getScreenshot("HourlyRateResult", driver);
     }
 
-    }
+}

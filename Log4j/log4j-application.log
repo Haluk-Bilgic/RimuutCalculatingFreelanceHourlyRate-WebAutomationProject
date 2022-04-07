@@ -1,0 +1,16 @@
+2022-04-07 23:45:05 INFO  Log4j:9 - Test is Starting...
+2022-04-07 23:45:05 INFO  Log4j:17 - Accepting cookies
+2022-04-07 23:45:05 INFO  Log4j:17 - Selecting currency type
+2022-04-07 23:45:07 INFO  Log4j:17 - Passing to expenses section
+2022-04-07 23:45:07 INFO  Log4j:17 - Typing monthlyRent input field
+2022-04-07 23:45:07 INFO  Log4j:17 - Typing cellPhoneBill input field
+2022-04-07 23:45:07 INFO  Log4j:17 - Typing utilitiesCost input field
+2022-04-07 23:45:07 INFO  Log4j:17 - Typing foodCast input field
+2022-04-07 23:45:08 INFO  Log4j:17 - Typing CreditCard input field
+2022-04-07 23:45:09 INFO  Log4j:17 - Passing to Others section
+2022-04-07 23:45:10 INFO  Log4j:17 - Typing taxationCost input field
+2022-04-07 23:45:10 INFO  Log4j:17 - Typing yourProfitMargin input field
+2022-04-07 23:45:10 INFO  Log4j:17 - Typing hoursForWorking input field
+2022-04-07 23:45:10 INFO  Log4j:17 - Printing Result
+2022-04-07 23:45:11 INFO  Log4j:17 - Creating Screenshot
+2022-04-07 23:45:11 INFO  Log4j:13 - Test is Ending...

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.Log4j;
 
 public class CurrencySection extends BasePage {
 
@@ -28,16 +29,18 @@ public class CurrencySection extends BasePage {
 
 
     public void clickAcceptAllbutton() {
+        Log4j.info("Accepting cookies");
         clickFunction(acceptAll);
     }
 
     public void selectCurrencyType(String currencyType) {
-
+        Log4j.info("Selecting currency type");
         selectElement(currencySection, currencyType);
     }
 
     public void openExpensesOptions() {
         waitFor(2);
+        Log4j.info("Passing to expenses section");
         clickFunction(expensesSection);
     }
 }

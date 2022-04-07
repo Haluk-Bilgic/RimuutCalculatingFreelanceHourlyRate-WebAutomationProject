@@ -10,16 +10,15 @@ public class BrowserSetup {
 
     static WebDriver driver;
 
-    public static WebDriver startBrowser(String browserName,String url){
+    public static WebDriver startBrowser(String browserName, String url) {
 
-        if(browserName.equalsIgnoreCase("chrome")){
+        if (browserName.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", "C:/Program Files/selenium/chromeDriver/chromedriver.exe");
-            driver=new ChromeDriver();
+            driver = new ChromeDriver();
 
-        }
-        else if(browserName.equalsIgnoreCase("firefox")){
+        } else if (browserName.equalsIgnoreCase("firefox")) {
             System.setProperty("webdriver.gecko.driver", "C:/Program Files/selenium/firefoxDriver/geckodriver.exe");
-            driver=new FirefoxDriver();
+            driver = new FirefoxDriver();
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
