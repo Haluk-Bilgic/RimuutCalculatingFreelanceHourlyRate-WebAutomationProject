@@ -40,6 +40,7 @@ public class TestCalculation extends BaseTest {
         othersSection.typeProfitMargin("5000");
         othersSection.typeHoursForWorking("30");
         othersSection.viewResult();
+        othersSection.screenshot();
 
     }
 }
