@@ -1,5 +1,5 @@
 # RimuutCalculatingFreelanceHourlyRate-WebAutomationProject
-This project is a case study that tests some functions on Rimuut for Web UI Automation.
+This project is a case study that tests some functions on Rimuut.com for Web UI Automation.
 ## Language and Frameworks
 * Java
 * Selenium WebDriver
